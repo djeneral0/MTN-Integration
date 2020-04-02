@@ -141,7 +141,7 @@
          "partyIdType": "MSISDN",
          "partyId": "'.$number.'"
        },
-       "payerMessage": "From Moolre",
+       "payerMessage": "From:",
        "payeeNote": "Transaction ID '.$externalID.'"
      }';
      //print_r($data);
@@ -263,7 +263,7 @@
          "partyIdType": "MSISDN",
          "partyId": "'.$number.'"
        },
-       "payerMessage": "From Moolre",
+       "payerMessage": "From:",
        "payeeNote": "Transaction ID '.$externalID.'"
      }';
 
