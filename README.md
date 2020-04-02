@@ -22,8 +22,7 @@ The API User and API Key are used to grant access to the wallet system in a spec
 
 # Create API User
 1. send a POST (baseURL}/apiuser request.
-
-Example https://sandbox.momodeveloper.mtn.com/v1_0/apiuser
+Example https://sandbox.momodeveloper.mtn.com/v1_0/apiuser 
 2. Provide UUID in the Reference ID in the request Hearder and subscription key.
 
 Example: X-Reference-Id: c72025f5-5cd1-4630-99e4-8ba4722fad56
@@ -38,8 +37,7 @@ Example: Ocp-Apim-Subscription-Key: d484a1f0d34f4301916d0f2c9e9106a2
 
 # Get API User Details
 1. Send a Get {baseURL}/apiuser/{APIUser} request
-
-Example: https://sandbox.momodeveloper.mtn.com/v1_0/apiuser/{686bf8c9-732e-4602-a25a-ab2b90f0497f}
+Example: https://sandbox.momodeveloper.mtn.com/v1_0/apiuser/{686bf8c9-732e-4602-a25a-ab2b90f0497f} 
 2. Specify the API User inthe URL and subscription Key in the header.
 3. Response with 2001 Ok and user details of the user.
 
