@@ -2,7 +2,7 @@
   class UUID{
     public function gen_uuid() {
       //generating of version 4 UUID, this is randomely generated
-    echo sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+    return sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
         // 32 bits for "time_low"
         mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ),
 
