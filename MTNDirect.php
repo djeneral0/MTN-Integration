@@ -22,14 +22,14 @@
       // the _disXRefId and _disApiUser are the same
       // likewise _colXRefId and _colApiUser
 
-      $this->_disPrimKey = "";
-      $this->_disSecdKey = "";
+      $this->_disPrimKey = "YOUR_PRIMARY_KEY_FOR_DISBURSEMENTS";
+      $this->_disSecdKey = "YOUR_SECONDARY_KEY_FOR_DISBURSEMENTS";
       $this->_disXRefId = "686bf8c9-732e-4602-a25a-ab2b90f0497f";
       $this->_disApiUser = "686bf8c9-732e-4602-a25a-ab2b90f0497f";
       $this->_disApiKey = "385794e283854a40a937882b1f832f1e";
 
-      $this->_colPrimKey = "";
-      $this->_colSecdKey = "";
+      $this->_colPrimKey = "YOUR_PRIMARY_KEY_FOR_COLLECTIONS";
+      $this->_colSecdKey = "YOUR_SECONDARY_KEY_FOR_COLLECTIONS";
       $this->_colXRefId = "686bf8c9-732e-4602-a25a-ab2b90f0497f";
       $this->_colApiUser = "686bf8c9-732e-4602-a25a-ab2b90f0497f";
       $this->_colApiKey = "385794e283854a40a937882b1f832f1e";
@@ -38,6 +38,9 @@
    public function apiUser($xRefID){
      // the version 4 UUID is used to generate User API
      // different apiuse must be generated to handle disbursement and collection
+     // when creating the API User, if its Collections change the Ocp-Apim-Subscription-Key: to use $this->_colPrimKey or $this->_colSecdKey
+     // if it's Disbursements use $this->_disPrimKey or $this->_disSecdKey
+
      $data = '{
        "providerCallbackHost": "clinic.com"
      }';
