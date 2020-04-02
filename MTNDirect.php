@@ -66,6 +66,9 @@
      // the same version 4 used to generate the APIuser is used to generate APIUser key
      // _disXRefId or _disApiUser is passed as $xRefID
      // _colXRefId or _colApiUser is passed as $xRefID
+     // when creating the API User, if its Collections change the Ocp-Apim-Subscription-Key: to use $this->_colPrimKey or $this->_colSecdKey
+     // if it's Disbursements use $this->_disPrimKey or $this->_disSecdKey
+     
      $data = '{
 
      }';
