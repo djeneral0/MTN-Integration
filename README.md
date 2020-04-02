@@ -1,5 +1,7 @@
 # MTN-Integration
 # Docomentation
+This ripo is to help with the implementation of MTN gateway from https://momodeveloper.mtn.com/api-documentation 
+
 The MTN gateway has 4 product namely
 * Collection Widget
 * Collections - Enables remote automatic collection of bills, fees or taxes
@@ -11,7 +13,10 @@ The MTN gateway has 4 product namely
 # Subscriptions
 Developers are issued a Primary Key and Secondary Key for every product.Both primary and secondary Subscription key provides access to the API. Without one of them a developer cannot access any of the APIs. Subscriptions are stored under the user profile and have no expiry.
 
-# generation of API User and API Key
+# Generation of of unique UUID Version 4
+Generate UUID version 4 to use in the generation of API User And API Key
+
+# Generation of API User and API Key
 There are two credentials used in the Open API.
 * Subscription Key
 * API User and API Key for Oauth 2.0
